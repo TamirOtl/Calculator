@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" href="Images/Calculator-icon.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="JavaScript/Calc.js"></script>
+
+
+</head>
+<body >
+<div >
+    <div class="header">
+        <h1>Calculator<p class="subtitle"> Doing the Math.</p></h1>
+        <i class="fa fa-calculator" ></i>
+    </div>
+    
+    
+</div>
+
+
+
+<div id="calculator" >
+    
+    <div class="top">
+    <div ><input type="text" class="screen" id="screen" placeholder="0" readonly></div>
+</div>
+    <table>
+        <tr>
+            <td><button class="otherButton" onclick="Precente()">% </button></td>
+            <td><button  class="otherButton" onclick="reset()">CE</button></td>
+            <td><button   class="otherButton"onclick="reset()">C</button></td>
+            <td><button class="otherButton " onclick="Backspace()" ><i class="fas fa-backspace"></i></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="fruction()">1<sub>/X</sub></button></td>
+            <td><button onclick="powerby2()"><sub>X</sub>2</button></td>
+            <td><button onclick="sqrt()"><i class="fas fa-square-root-alt"></i></button></td>
+            <td><button class="OperatorButton" onclick="oprator('/')"><i class='fas fa-divide'></i></button></td>
+            
+        </tr>
+        <tr>
+            <td><button  onclick="insert(7)">7</button></td>
+            <td><button onclick="insert(8)">8</button></td>
+            <td><button onclick="insert(9)">9</button></td>
+            <td><button class="OperatorButton" onclick="oprator('*')">X</button></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="insert(4)">4</button></td>
+            <td><button onclick="insert(5)">5</button></td>
+            <td><button onclick="insert(6)">6</button></td>
+            <td><button class="OperatorButton" onclick="oprator('-')"><i class="fa fa-minus"></i></button></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="insert(1)">1</button></td>
+            <td><button onclick="insert(2)">2</button></td>
+            <td><button onclick="insert(3)">3</button></td>
+            <td><button class="OperatorButton" onclick="oprator('+')" >+</button></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="negative()">&#177</button></td>
+            <td><button onclick="insert(0)">0</button></td>
+            <td><button onclick="insertDec('.')" >.</button></td>
+            <td><button class="OperatorButton" onclick="equal()">=</button></td>
+            
+        </tr>
+        </table>
+
+</div>
+
+
+
+
+
+</body>
+</html>
